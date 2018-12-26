@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/maxresdefault"
+    tools:context="com.example.bambangsulistyo.hablumminannas.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enam Hak dan Kewajiban Muslim atas Muslim Lainnya"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#FAFAFA"/>
+
+            <Button
+                android:id="@+id/button_salam"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mengucapkan Salam"
+                android:onClick="mengucapkanSalam"
+                android:textColor="#FAFAFA"/>
+
+            <Button
+                android:id="@+id/button_undangan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Memenuhi Undangan"
+                android:onClick="undangan"
+                android:textColor="#FAFAFA"/>
+
+            <Button
+                android:id="@+id/button_nasihat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Memberi nasihat"
+                android:onClick="nasihat"
+                android:textColor="#FAFAFA"/>
+
+            <Button
+                android:id="@+id/button_bersin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Menjawab Hamdalah Saat Bersin"
+                android:onClick="bersin"
+                android:textColor="#FAFAFA"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Membesuknya saat sakit"
+                android:onClick="sakit"
+                android:textColor="#FAFAFA"/>
+
+            <Button
+                android:id="@+id/button_jenazah"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mengantarkan jenazah"
+                android:onClick="jenazah"
+                android:textColor="#FAFAFA"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rasulullah Saw bersabda:"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:textColor="#FAFAFA"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pembukaan"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:textColor="#FAFAFA"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/penutup1"
+                android:textSize="16sp"
+                android:textColor="#FAFAFA"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/penutup2"
+                android:textSize="16sp"
+                android:textColor="#FAFAFA"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
